@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.div-text {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.div-input {
+    margin-right: 1rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+    display: flex;
+    width: 100px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgba(107, 107, 107, 0.236);
+}
+
+.inputerror {
+    border: 2px solid #dc3545;
+}
+
+.button {
+    padding: 1rem;
+    background-color: rgb(78, 44, 212);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(107, 107, 107, 0.236);
+    border-radius: 5px;
+}
+
+.errormessage {
+    position: absolute;
+    color: #dc3545;
+/*     border: 1px solid #dc3545; */
+    max-width: 350px;
+    text-align: center;
+    padding: 7px 0;   
+}
