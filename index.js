@@ -118,11 +118,8 @@ const showError = (frase) => {
     erorrMessage.innerHTML = `*${frase}`;
 }
 
-console.log(pizzaAnterior);
-
 function init() {
     if(pizzaAnterior.length !== 0){
-        console.log("me activo");
         divCard.classList.remove("hide")
         renderPizza(pizzaAnterior)
     }
