@@ -10,7 +10,7 @@ let Pizzas = [
     {
         id: 2,
         nombre:"4 quesos",
-        imagen:"./img/pizza-cuatro-quesos.jpg",
+        imagen:"./img/Pizza-cuatro-quesos.jpg",
         ingredientes: ["Mozzarella", " Roquefort", " Parmesano", " Fontina"],
         precio: 950
     },
