@@ -92,13 +92,12 @@ function PizzaValidation() {
     }
     else {
         pizza = Pizzas.find((pizza) => {return pizza.id === number})
-        console.log(pizza);
         savePizza(pizza);
         saveLocalStorage();
         divCard.classList.remove("hide")
         input.classList.remove("inputerror")
         erorrMessage.innerHTML = "";
-        renderPizza(pizza)
+        renderPizza(pizzaAnterior)
     }
 }
 
@@ -119,8 +118,13 @@ const showError = (frase) => {
     erorrMessage.innerHTML = `*${frase}`;
 }
 
+console.log(pizzaAnterior);
+
 function init() {
-    divCard.classList.remove("hide")
-    renderPizza(pizzaAnterior)
+    if(pizzaAnterior.length !== 0){
+        console.log("me activo");
+        divCard.classList.remove("hide")
+        renderPizza(pizzaAnterior)
+    }
 }
 init()
